@@ -13,7 +13,7 @@ st.set_page_config(
     layout="centered"
 )
 
-COHERE_API_KEY = "PASTE_YOUR_COHERE_API_KEY_HERE"
+COHERE_API_KEY = "bf5Qur8XrFgfmiAoU0KL111qbVud0P2KGQFZvdW8"
 co = cohere.Client(COHERE_API_KEY)
 
 # =========================
@@ -95,7 +95,7 @@ def speak(text, voice):
 
 def ai_response(user_text):
     response = co.generate(
-        model="command-r-plus",
+        model="command-a-03-2025",
         prompt=f"""
 You are {st.session_state.ai_name}.
 Role: {st.session_state.ai_role}
